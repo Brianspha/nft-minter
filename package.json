@@ -26,10 +26,8 @@
     "build:client": "yarn workspace @nft-minter/client build",
     "build:server": "yarn workspace @nft-minter/server build",
     "build:move": "fse move --all --overwrite ./packages/client/build ./packages/server/build/public",
-
     "build": "yarn build:client && yarn build:server && yarn build:move",
     "heroku:build": "yarn metadata:deploy:ipfs && yarn contract:deploy:rinkeby && yarn build",
-
     "serve": "yarn workspace @nft-minter/server serve",
     "externals": "newsh \"dotenv -e .env -e contracts/.env -- docker-compose up\"",
     "externals:down": "docker-compose down -v",
@@ -72,7 +70,15 @@
     "hh:coverage": "npm run build && hardhat coverage --temp artifacts --network coverage",
     "hh:deploy": "hardhat run --network rinkeby scripts/deploy.ts",
     "hh:verify": "hardhat verify --network rinkeby",
-    "hh": "hardhat"
+    "hh": "hardhat",
+    "near:test": "yarn workspace greeter test",
+    "near:build": "yarn workspace erc721-near build:near",
+    "near:build-contract": "yarn workspace erc721-near build:contract",
+    "near:build-web": "yarn workspace erc721-near build:web",
+    "near:build-gh": "yarn workspace erc721-near deploy:pages",
+    "near:serve": "yarn workspace erc721-near serve",
+    "near:deploy-main-net": "yarn workspace erc721-near deploy:contract",
+    "near:deploy-dev": "yarn workspace erc721-near dev:deploy:contract"
   },
   "dependencies": {
     "@openzeppelin/contracts": "2.5.0",
@@ -120,6 +126,8 @@
     "ts-generator": "^0.1.1",
     "ts-node": "^9.0.0",
     "typechain": "^3.0.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "@vue/cli-plugin-eslint": "^4.5.12"
+
   }
 }

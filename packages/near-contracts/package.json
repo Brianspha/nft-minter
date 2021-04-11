@@ -1,0 +1,24 @@
+{
+  "name": "greeter",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "asb",
+    "build:debug": "asb --target debug",
+    "test": "asp --nologo",
+    "build:contract": "node ./compile.js",
+    "deploy:contract": "near deploy",
+    "deploy:pages": "gh-pages -d dist/",
+    "dev": "nodemon --watch contract -e ts --exec \"npm run start\"",
+    "dev:deploy:contract": "near dev-deploy"
+
+  },
+  "dependencies": {
+    "near-sdk-as": "2.2.4",
+    "uint256": "^1.0.8"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.4"
+  }
+}
