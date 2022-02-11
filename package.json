@@ -81,7 +81,7 @@
     "near:deploy-dev": "yarn workspace erc721-near dev:deploy:contract"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "2.5.0",
+    "@openzeppelin/contracts": "4.4.2",
     "concurrently": "^4.1.1",
     "copyfiles": "^2.4.0",
     "dotenv": "^8.2.0",
