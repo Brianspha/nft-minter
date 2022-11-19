@@ -16,7 +16,7 @@
     "react-icons": "^3.11.0",
     "react-query": "^2.23.1",
     "react-query-devtools": "^2.6.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.7.1",
     "threads": "^1.4.1"
   },
