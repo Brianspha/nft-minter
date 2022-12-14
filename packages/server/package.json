@@ -8,7 +8,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ethers": "^5.0.19",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-basic-auth": "^1.2.0",
     "near-api-js": "^0.39.0",
     "near-web3-provider": "^1.2.0",
