@@ -115,7 +115,7 @@
     "base-path-converter": "^1.0.2",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
-    "ethereum-waffle": "^3.1.2",
+    "ethereum-waffle": "^4.0.7",
     "ethers": "^5.0.19",
     "form-data": "^3.0.0",
     "hardhat": "^2.1.1",
